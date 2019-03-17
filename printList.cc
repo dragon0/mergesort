@@ -6,11 +6,9 @@ void printList(list* l){
 
     if(n != NULL){
         std::cout << n->data->value;
-        n = n->next;
 
-        while(n != NULL){
+        while((n = n->next) != NULL){
             std::cout << ", " << n->data->value;
-            n = n->next;
         }
         std::cout << std::endl;
 
